@@ -9,12 +9,14 @@ function show() {
     p2.textContent = generate()
 }
 
-
 function generate() {
     let str = ""
     let count = document.getElementById("length").value
+    let length_of_characters = characters.length
+    let sym =  document.getElementById("isSym").checked
+    let l = (sym)?length_of_characters:52;
     for(let i=0; i<count; i++) {   
-        let index = Math.floor(Math.random()*characters.length)
+        let index = Math.floor(Math.random()*l)
         str += characters[index]
     }
     return str

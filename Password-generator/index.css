@@ -28,6 +28,11 @@ h1 {
     font-weight: bolder;
 }
 
+.check {
+    color: #68ac93;
+    text-align: left;
+}
+
 .btn-g {
     color: whitesmoke;
     background-color: #04AA6D;
